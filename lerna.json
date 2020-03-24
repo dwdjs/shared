@@ -1,0 +1,24 @@
+{
+  "version": "independent",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        ".npmignore",
+        "__test__",
+        "*.test.js"
+      ]
+    },
+    "bootstrap": {
+      "ignore": "*.test.js",
+      "npmClientArgs": [
+        "--production",
+        "--no-optional",
+        "--no-package-lock"
+      ]
+    }
+  }
+}
