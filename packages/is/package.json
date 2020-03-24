@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "check type",
   "main": "lib/index.js",
+  "files": [
+    "./README.md",
+    "lib"
+  ],
   "scripts": {
     "dev": "./node_modules/.bin/babel src -s inline -d ./lib --ignore __test__",
     "build": "./node_modules/.bin/babel src -d ./lib --ignore __test__",
