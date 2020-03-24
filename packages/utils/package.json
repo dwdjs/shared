@@ -1,0 +1,32 @@
+{
+  "name": "@deepjs/utils",
+  "version": "0.0.11",
+  "description": "utils",
+  "main": "lib/index.js",
+  "files": [
+    "./README.md",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/babel src -s inline -d ./lib --ignore __test__",
+    "build": "./node_modules/.bin/babel src -d lib --ignore __test__",
+    "prepublish": "npm run build",
+    "test": "jest --no-cache --detectOpenHandles"
+  },
+  "keywords": [
+    "utils",
+    "deepjs"
+  ],
+  "author": "cloudyan <1395093509@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0"
+  },
+  "gitHead": "ea20f2200cb58e007ca05c00aeeb76fe2c5d31e8"
+}

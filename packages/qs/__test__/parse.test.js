@@ -8,11 +8,13 @@ const result1 = {
   id: '646156',
   platform: '5',
 };
+
 const test2 = 'haoshiqi://com.doweidu/detail?id=1&order_id=23';
 const test3 = 'id=1&order_id=23';
 const test4 = 'id=1?order_id=23';
 const test5 = 'id=1&order-id=23';
 const test6 = 'id=xx&c=123&q=5%E6%9C%88';
+
 const result2 = {
   id: '1',
   order_id: '23',
