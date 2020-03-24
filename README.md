@@ -15,7 +15,30 @@
 
 开发维护
 
+- `lerna init` 初始化项目
+- `lerna bootstrap` 安装依赖
+  - 默认是npm, 而且每个子package都有自己的node_modules
+  - 配置 `yarn+workspaces` 后，只有顶层有一个node_modules
+  - TIP: 直接最外层运行，并不会把每个包的依赖都按照好，需要进去安装
+- `lerna list` 列出所有的包
+- `lerna create <name> [loc]` 创建一个包 默认放在 `workspaces[0]`所指位置
+- `lerna run <script>` 运行所有包里面的有这个script的命令
+- `lerna exec` 运行任意命令在每个包
+- `lerna clean` 删除所有包的node_modules目录
+- `lerna changed` 列出下次发版lerna publish 要更新的包。
+- `lerna publish` 会打tag，上传git,上传npm。
+  - 需要在packages.json添加 "publishConfig": { "access": "public" },
+
+配置 yarn + workspaces
+
 ```bash
-lerna init
-lerna bootstrap
+# package.json 文件加入
+"private": true,
+"workspaces": [
+  "packages/*"
+],
+
+# lerna.json 文件加入
+"useWorkspaces": true,
+"npmClient": "yarn",
 ```
