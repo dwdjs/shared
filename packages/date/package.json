@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/date",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "date utils",
   "main": "lib/index.js",
   "files": [
