@@ -4,6 +4,13 @@
 
 独立包，无依赖，语义化，使用简单
 
+功能列表
+
+- set
+- get
+- remove
+- clear
+
 ## 使用
 
 ```js
@@ -14,5 +21,7 @@ storage.get('name');
 
 setTimeout(() => {
   storage.get('name');
+  storage.remove('name');
+  storage.clear('name');
 }, 6000);
 ```

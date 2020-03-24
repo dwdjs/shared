@@ -17,8 +17,8 @@ try {
 }
 
 const storage = {
-  set(key, value, time = 3600) { // time 单位秒，默认1h，0为1年
-    if (!time) time = 86400 * 365;
+  set(key, value, time = 3600) { // time 单位秒，默认1h
+    // if (!time) time = 86400 * 365;
     const timeout = Date.now() + time * 1000;
     const data = {
       value,

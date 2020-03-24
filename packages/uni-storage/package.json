@@ -29,5 +29,5 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0"
   },
-  "gitHead": "566d30ba8e99eab66a3809499fa197cfcb816217"
+  "gitHead": "ea20f2200cb58e007ca05c00aeeb76fe2c5d31e8"
 }
