@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/version",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "light version",
   "main": "lib/index.js",
   "files": [

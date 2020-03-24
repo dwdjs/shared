@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/qs",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "qs for url query-string",
   "main": "lib/index.js",
   "files": [
