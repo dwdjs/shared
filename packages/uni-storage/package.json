@@ -1,7 +1,7 @@
 {
-  "name": "@deepjs/version",
+  "name": "@deepjs/uni-storage",
   "version": "0.0.10",
-  "description": "light version",
+  "description": "uni-app storage",
   "main": "lib/index.js",
   "files": [
     "./README.md",
@@ -12,13 +12,14 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "npx @babel/cli src -s inline -d ./lib --ignore __test__",
+    "dev": "./node_modules/.bin/babel src -s inline -d ./lib --ignore __test__",
     "build": "./node_modules/.bin/babel src -d lib --ignore __test__",
     "prepublish": "npm run build",
-    "test": "jest --no-cache --detectOpenHandles"
+    "test": "echo uni-app storage"
   },
   "keywords": [
-    "version",
+    "storage",
+    "uni-app",
     "deepjs"
   ],
   "author": "cloudyan <1395093509@qq.com>",
