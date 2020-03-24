@@ -1,0 +1,25 @@
+{
+  "version": "0.0.7",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        ".npmignore",
+        "package-lock.json",
+        "__test__",
+        "*.test.js"
+      ]
+    },
+    "bootstrap": {
+      "ignore": "*.test.js",
+      "npmClientArgs": [
+        "--production",
+        "--no-optional",
+        "--no-package-lock"
+      ]
+    }
+  }
+}
