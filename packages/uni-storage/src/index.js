@@ -16,7 +16,7 @@ try {
   allData = {};
 }
 
-const storage = {
+export const storage = {
   set(key, value, time = 3600) { // time 单位秒，默认1h
     // if (!time) time = 86400 * 365;
     const timeout = Date.now() + time * 1000;
@@ -52,7 +52,10 @@ const storage = {
     delete allData[key];
     this.setAllData();
   },
-  clear() {
+  clear(bool) {
+    if (bool) {
+      // 清空所有
+    }
     allData = {};
     this.setAllData();
   },
@@ -66,5 +69,3 @@ const storage = {
     });
   }
 }
-
-export default storage;

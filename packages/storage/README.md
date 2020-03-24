@@ -1,6 +1,6 @@
-# uni-storage
+# storage
 
-封装 uni-app 的 storage，同步取，异步存
+适用于 web，封装 localStorage, sessionStorage，简单好用
 
 独立包，无依赖，语义化，使用简单
 
@@ -14,7 +14,7 @@
 ## 使用
 
 ```js
-import { storage } from '@deepjs/uni-storage';
+import { storage, session } from '@deepjs/storage';
 
 storage.set('name', 'cloudyan', 5);
 storage.get('name');
@@ -22,6 +22,6 @@ storage.get('name');
 setTimeout(() => {
   storage.get('name');
   storage.remove('name');
-  storage.clear('name');
+  storage.clear();
 }, 6000);
 ```
