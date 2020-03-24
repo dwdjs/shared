@@ -1,0 +1,34 @@
+{
+  "name": "@deepjs/qs",
+  "version": "0.0.7",
+  "description": "qs for url query-string",
+  "main": "lib/index.js",
+  "files": [
+    "./README.md",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/babel src -s inline -d ./lib --ignore __test__",
+    "build": "./node_modules/.bin/babel src -d ./lib --ignore __test__",
+    "prepublish": "npm run build",
+    "test": "jest --no-cache --detectOpenHandles"
+  },
+  "keywords": [
+    "qs",
+    "stringify",
+    "query-string",
+    "deepjs"
+  ],
+  "author": "cloudyan <1395093509@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0"
+  },
+  "gitHead": "566d30ba8e99eab66a3809499fa197cfcb816217"
+}
