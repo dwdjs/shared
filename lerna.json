@@ -1,8 +1,9 @@
 {
-  "version": "0.0.7",
+  "version": "0.0.11",
   "packages": [
     "packages/*"
   ],
+  "useWorkspaces": true,
   "command": {
     "publish": {
       "ignoreChanges": [

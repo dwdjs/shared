@@ -1,7 +1,7 @@
 {
-  "name": "@deepjs/is",
+  "name": "@deepjs/date",
   "version": "0.0.11",
-  "description": "check type",
+  "description": "date utils",
   "main": "lib/index.js",
   "files": [
     "./README.md",
@@ -18,7 +18,7 @@
     "test": "jest --no-cache --detectOpenHandles"
   },
   "keywords": [
-    "is",
+    "date",
     "deepjs"
   ],
   "author": "cloudyan <1395093509@qq.com>",

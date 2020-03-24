@@ -1,7 +1,7 @@
 {
-  "name": "@deepjs/is",
+  "name": "@deepjs/qs",
   "version": "0.0.11",
-  "description": "check type",
+  "description": "qs for url query-string",
   "main": "lib/index.js",
   "files": [
     "./README.md",
@@ -18,7 +18,9 @@
     "test": "jest --no-cache --detectOpenHandles"
   },
   "keywords": [
-    "is",
+    "qs",
+    "stringify",
+    "query-string",
     "deepjs"
   ],
   "author": "cloudyan <1395093509@qq.com>",

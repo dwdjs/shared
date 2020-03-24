@@ -1,7 +1,7 @@
 {
   "name": "@deepjs/version",
-  "version": "0.0.7",
-  "description": "check type",
+  "version": "0.0.11",
+  "description": "light version",
   "main": "lib/index.js",
   "files": [
     "./README.md",
@@ -12,13 +12,13 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/babel src -s inline -d ./lib --ignore __test__",
-    "build": "./node_modules/.bin/babel src -d ./lib --ignore __test__",
+    "dev": "npx @babel/cli src -s inline -d ./lib --ignore __test__",
+    "build": "./node_modules/.bin/babel src -d lib --ignore __test__",
     "prepublish": "npm run build",
     "test": "jest --no-cache --detectOpenHandles"
   },
   "keywords": [
-    "is",
+    "version",
     "deepjs"
   ],
   "author": "cloudyan <1395093509@qq.com>",
@@ -28,5 +28,5 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0"
   },
-  "gitHead": "566d30ba8e99eab66a3809499fa197cfcb816217"
+  "gitHead": "ea20f2200cb58e007ca05c00aeeb76fe2c5d31e8"
 }
