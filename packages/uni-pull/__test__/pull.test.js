@@ -1,5 +1,5 @@
-import { cache } from '../src';
+// import {  } from '../src';
 
-test('cache', () => {
+test('test', () => {
   expect(111).toBe(111);
 })

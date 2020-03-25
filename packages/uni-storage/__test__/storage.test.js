@@ -1,6 +1,7 @@
-import { storage } from '../src';
-
 // uni-app 怎么自动化测试呢
-test('storage', () => {
+// import {  } from '../src';
+
+test('test', () => {
   expect(111).toBe(111);
 })
+

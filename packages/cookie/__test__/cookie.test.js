@@ -1,5 +1,5 @@
-import { cookie } from '../src';
+// import {  } from '../src';
 
-test('cookie', () => {
+test('test', () => {
   expect(111).toBe(111);
 })
