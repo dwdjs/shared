@@ -7,19 +7,23 @@
 
 模块列表
 
-- [ ] bridge
-- [x] cache   [lru-cache]
-- [x] cookie  [js-cookie]
-- [x] date
-- [ ] device
-- [x] html-parser
-- [x] is
-- [x] qs
-- [ ] stat
-- [x] storage
-- [x] uni-storage
-- [x] utils
-- [x] version
+- common
+  - [ ] bridge
+  - [x] cache   [lru-cache]
+  - [x] date
+  - [x] html-parser
+  - [x] is
+  - [x] qs
+  - [ ] stat
+  - [x] utils
+  - [x] version
+- web 专用
+  - [x] cookie  [js-cookie]
+  - [ ] device
+  - [x] storage
+- uni-app 专用
+  - [x] uni-pull
+  - [x] uni-storage
 
 第三方
 
