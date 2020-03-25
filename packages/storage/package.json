@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/storage",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "browser storage",
   "main": "lib/index.js",
   "files": [

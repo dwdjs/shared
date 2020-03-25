@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/html-parser",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "uni-app html-parser",
   "main": "lib/index.js",
   "files": [
