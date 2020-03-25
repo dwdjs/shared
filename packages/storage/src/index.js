@@ -1,14 +1,17 @@
+
 let win = {};
 if (typeof window !== 'undefined') {
   win = window;
 }
 
 export const { localStorage, sessionStorage } = win;
-let storageData = {};
+
+const STORAGE_KEY = 'web_global'
 const store = {
   local: localStorage,
   session: sessionStorage,
-};
+}
+let storageData = {};
 
 // 数据缓存，还可以结合LRU
 //
@@ -22,7 +25,7 @@ const store = {
 /**
  * 缓存机制
  *
- * 支持自定义缓存时间、是否按整天计算
+ * 支持自定义缓存时间
  *
  * @export
  * @class Storage
@@ -89,20 +92,20 @@ export class Storage {
     const temp = storageData[storeKey][key];
     if (!temp) return;
     // 缓存不存在
-    if (!temp.value) return null;
+    if (!temp.value) return;
     const now = Date.now();
     if (temp.timeout && temp.timeout < now) {
       // 缓存过期
       this.remove(key);
-      return '';
+      return;
     }
-    if (temp.timeout && isInteger(Number(temp.cycle))) {
+    if (temp.timeout && typeof temp.cycle === 'number') {
       const cycleEndTimes =
         new Date(temp.timeout).setHours(0, 0, 0, 0) + temp.cycle * 1000;
       if (temp.timeout < cycleEndTimes) {
         // 缓存周期点过期
         this.remove(key);
-        return '';
+        return;
       }
     }
     return temp.value;
@@ -116,7 +119,7 @@ export class Storage {
   }
   clear(bool) {
     const { storeKey, storeType } = this;
-    if (bool !== true) {
+    if (!bool) {
       storageData[storeKey] = {};
       store[storeType].removeItem(`${storeKey}`);
     } else {

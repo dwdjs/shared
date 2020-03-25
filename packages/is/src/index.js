@@ -47,6 +47,10 @@ export function isObject(v) {
   return v !== null && typeof v === 'object' && Array.isArray(v) === false;
 }
 
+export function isEmptyObject(v) {
+  return JSON.stringify(v) === '{}';
+}
+
 export function isFunction(v) {
   var isAlert = typeof window !== 'undefined' && v === window.alert;
   if (isAlert) {
@@ -59,12 +63,7 @@ export function isFunction(v) {
     str === '[object AsyncFunction]'
   );
 }
-
 export const isFn = isFunction;
-
-export function isEmptyObject(v) {
-  return JSON.stringify(v) === '{}';
-}
 
 export function isPromise(v) {
   return v && typeof v.then === 'function';

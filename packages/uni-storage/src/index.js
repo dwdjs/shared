@@ -7,7 +7,7 @@
 let allData = {};
 
 // 不要使用常用的 KEY, 避免冲突
-const STORAGE_KEY = 'c_global'
+const STORAGE_KEY = 'uni_global'
 try {
   allData = uni.getStorageSync(STORAGE_KEY) || {};
 } catch (err) {
@@ -52,17 +52,18 @@ export const storage = {
     delete allData[key];
     this.setAllData();
   },
-  clear(bool) {
-    if (bool) {
-      // 清空所有
-    }
+  clear(bool) { //
     allData = {};
-    this.setAllData();
+    if (!bool) {
+      this.setAllData();
+    } else {
+      // 传 true 异步清除所有类型的缓存
+      uni.clearStorage();
+    }
   },
   setAllData() {
-    uni.setStorage({
+    uni.removeStorage({
       key: STORAGE_KEY,
-      data: allData,
       success: function () {
         // console.log('success');
       }

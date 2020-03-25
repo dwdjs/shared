@@ -6,10 +6,12 @@
 
 功能列表
 
-- set
-- get
-- remove
-- clear
+- localStorage/sessionStorage
+- storage
+  - set
+  - get
+  - remove
+  - clear
 
 ## 使用
 
