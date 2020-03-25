@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/cookie",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "cookie",
   "main": "lib/index.js",
   "files": [
