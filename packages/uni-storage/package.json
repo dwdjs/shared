@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/uni-storage",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "uni-app storage",
   "main": "lib/index.js",
   "files": [
