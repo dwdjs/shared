@@ -1,5 +1,4 @@
 import {
-  isMobile,
   randomRange,
   guid,
   uuid,
@@ -12,15 +11,6 @@ import {
 
 // const testStr =
 // '_~0123456789' + 'abcdefghijklmnopqrstuvwxyz' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-test('isMobile', () => {
-  expect(isMobile('13324973375')).toBe(true);
-  expect(isMobile('18812341234')).toBe(true);
-  expect(isMobile('133249733751')).toBe(false);
-  expect(isMobile('11324973375')).toBe(false);
-  expect(isMobile('013324973375')).toBe(false);
-  // expect(randomRange(1, 2)).toBe(1);
-});
 
 test('randomRange', () => {
   expect(randomRange(1)).toBe(1);

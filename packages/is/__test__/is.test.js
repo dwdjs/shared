@@ -1,4 +1,5 @@
 import {
+  isMobile,
   isUnDef,
   isDef,
   isNumber,
@@ -10,6 +11,15 @@ import {
   isFunction,
   looseEqual,
 } from '../src';
+
+test('isMobile', () => {
+  expect(isMobile('13324973375')).toBe(true);
+  expect(isMobile('18812341234')).toBe(true);
+  expect(isMobile('133249733751')).toBe(false);
+  expect(isMobile('11324973375')).toBe(false);
+  expect(isMobile('013324973375')).toBe(false);
+  // expect(randomRange(1, 2)).toBe(1);
+});
 
 test('isUnDef', () => {
   expect(isUnDef(null)).toBe(true);

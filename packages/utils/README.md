@@ -4,6 +4,7 @@
 
 功能列表
 
+- blockFastClick 阻止快速点击
 - guid
 - uuid
 - random        随机

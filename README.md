@@ -21,6 +21,11 @@
 - [x] utils
 - [x] version
 
+第三方
+
+- url-parse URL解析
+- lru-cache 缓存功能, 使用替换策略——最久未使用算法
+
 **commit message:**
 
 - feat: 新增功能

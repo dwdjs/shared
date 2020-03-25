@@ -1,5 +1,37 @@
 
 
+// 防止快速点击
+let lastClickTime = 0;
+export function blockFastClick(){
+  const time = Date.now();
+  if (time - lastClickTime < 100) {
+    return true;
+  }
+  lastClickTime = time;
+  return false;
+}
+
+// 如果详情页主内容全是图片，完全可以匹配出图片后渲染，而非使用复杂的富文本解析组件
+// 从html字符串中匹配<img>标签，再匹配src属性
+export function regImgs(html = '', isGlobal) {
+  // 匹配图片（g表示匹配所有结果i表示区分大小写）
+  const imgReg = new RegExp('<img.*?(?:>|\/>)', (isGlobal ? 'ig' : 'i') );
+  // 匹配src属性
+  const srcReg = /src=[\'\"]?([^\'\"]*)[\'\"]?/i;
+  const arr = html.match(imgReg);
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    const src = arr[i].match(srcReg);
+    // 获取图片地址
+    if (src[1]) {
+      result.push(src[1]);
+      // alert('已匹配的图片地址'+(i+1)+'：'+src[1]);
+    }
+  }
+
+  return result;
+}
+
 export function guid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
     const r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);

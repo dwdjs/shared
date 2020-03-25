@@ -3,6 +3,25 @@
  * @deepjs/is
  */
 
+// 将正则提取出来，可以缓存编译，优化速度
+// const objRegExp = {
+//   email: /^(?:\w+\.?)*\w+@(?:\w+\.?)*\w+$/,
+//   passward: /^[a-zA-Z0-9]{6,20}$/,
+//   // mobile: /^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(17([0-1]|[6-8]))|(18([0-9])))\d{8}$/,
+//   mobile: /^1[3-9]\d{9}$/,
+//   mobileCode: /^(\d{6}|\d{4})$/,
+//   passward1: /(.+){6,}/,
+//   chinese: /^[\u4e00-\u9fff]{0,}$/,
+//   english: /^[A-Za-z]+$/,
+//   zip: /^[1-9]\d{5}$/,
+//   num: /^\d+$/,
+//   IDCardNo: /^[A-Za-z0-9]+$/,
+//   englishAndSpace: /^([a-zA-Z ]+|[\u4e00-\u9fa5]+)$/,
+//   verifycode: /^[a-z0-9]{4,30}$/,
+//   // URL的一般格式为： scheme://host:port/path?query#fragment
+//   httpUrl: /^https+:\/\//,
+// };
+
 /**
  * 常用类型判断
  * 是否定义 字符串 数字 纯对象 空对象 数组 函数

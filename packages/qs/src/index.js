@@ -11,6 +11,16 @@ export * from './stringify.js';
 export * from './compact.js';
 export * from './compactObject.js';
 
+export function decodeQuery(query = {}) {
+  const result = {};
+  for (const key in query) {
+    if (![undefined, ''].includes(query[key])) {
+      result[decodeURIComponent(key)] = decodeURIComponent(query[key]);
+    }
+  }
+  return result;
+}
+
 // export default {
 //   copy,
 //   parse,
