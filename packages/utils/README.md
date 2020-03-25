@@ -4,7 +4,6 @@
 
 功能列表
 
-- isMobile      检测手机号
 - guid
 - uuid
 - random        随机

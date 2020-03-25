@@ -19,6 +19,8 @@
 - isPromise
 - looseEqual
   - alias: isEqual
+- 格式校验
+  - isMobile 检测手机号
 
 ## 使用
 

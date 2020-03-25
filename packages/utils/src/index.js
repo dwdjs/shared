@@ -1,14 +1,5 @@
 
 
-// 缓存正则变量，可以优化性能
-const regMobile = /^1[3-9]\d{9}$/;
-
-// 手机号正则检测
-// /^1[3-9]\d{9}$/.test('013324973375') 要测试string 不能是数字
-export function isMobile(mobile) {
-  return regMobile.test(mobile);
-}
-
 export function guid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
     const r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);

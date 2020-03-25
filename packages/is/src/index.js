@@ -69,6 +69,22 @@ export function isPromise(v) {
   return v && typeof v.then === 'function';
 }
 
+// 缓存正则变量，可以优化性能
+const regMobile = /^1[3-9]\d{9}$/;
+
+// 手机号正则检测
+/* 手机号变化挺快的，做精简检测
+  130~139
+  145、147
+  15*（没有154）
+  170、171、176、177、178
+  180-189
+*/
+// /^1[3-9]\d{9}$/.test('013324973375') 要测试string 不能是数字
+export function isMobile(mobile) {
+  return regMobile.test(mobile);
+}
+
 /**
  * looseEqual
  * Check if two values are loosely equal - that is,
