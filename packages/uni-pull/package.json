@@ -1,7 +1,7 @@
 {
-  "name": "@deepjs/qs",
+  "name": "@deepjs/uni-pull",
   "version": "0.1.2",
-  "description": "qs for url query-string",
+  "description": "uni-app 上拉加载 && 下拉刷新",
   "main": "lib/index.js",
   "files": [
     "./README.md",
@@ -12,15 +12,15 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/babel src -s inline -d ./lib --ignore __test__",
+    "dev": "npx @babel/cli src -s inline -d ./lib --ignore __test__",
     "build": "./node_modules/.bin/babel src -d lib --ignore __test__",
     "prepublish": "npm run build",
     "test": "jest --no-cache --detectOpenHandles"
   },
   "keywords": [
-    "qs",
-    "stringify",
-    "query-string",
+    "pull-up",
+    "pull-down",
+    "uni-app",
     "deepjs"
   ],
   "author": "cloudyan <1395093509@qq.com>",
