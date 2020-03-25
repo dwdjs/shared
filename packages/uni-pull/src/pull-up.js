@@ -6,7 +6,6 @@
 
 // FIX: 关于 goNext入参 item 为什么时好时坏，什么规律什么原因？解决方案是 :key 不存在或不唯一的问题
 // https://ask.dcloud.net.cn/question/74465
-// import PullUp from '@/mixins/pull-up';
 import { deepCopy } from '@deepjs/qs';
 
 const PAGE_LIMIT = 'page_limit';
