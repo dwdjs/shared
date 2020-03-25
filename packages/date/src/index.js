@@ -1,4 +1,8 @@
-// 日期相关格式处理
+/*!
+ * @Author: cloudyan <cloudcode@qq.com>
+ * @Created at: 2020-03-25 22:03:00
+ * 功能说明: 日期相关格式处理
+ */
 
 /**
  * 添加前缀 0，是否使用 padLeft === padStart padEnd === padRight

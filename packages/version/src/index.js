@@ -1,6 +1,7 @@
 /*!
- * 轻量级语义版本比较
- * @deepjs/version
+ * @Author: cloudyan <cloudcode@qq.com>
+ * @Created at: 2020-03-25 22:05:06
+ * 功能说明: 轻量级语义版本比较 @deepjs/version
  */
 
 export function compare(v1, v2, complete) {

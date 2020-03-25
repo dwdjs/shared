@@ -1,6 +1,6 @@
 /*!
- * @Author: cloudyan
- * @Created at: 2020-02-21 19:24:12
+ * @Author: cloudyan <cloudcode@qq.com>
+ * @Created at: 2020-03-25 22:02:35
  * 功能说明: 封装 storage，同步取，异步存
  */
 

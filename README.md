@@ -8,8 +8,8 @@
 模块列表
 
 - [ ] bridge
-- [ ] cache   [lru-cache]
-- [ ] cookie  [js-cookie]
+- [x] cache   [lru-cache]
+- [x] cookie  [js-cookie]
 - [x] date
 - [ ] device
 - [x] html-parser

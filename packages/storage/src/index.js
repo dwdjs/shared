@@ -1,3 +1,9 @@
+/*!
+ * @Author: cloudyan <cloudcode@qq.com>
+ * @Created at: 2020-03-25 21:59:21
+ * 功能说明:
+ */
+
 
 let win = {};
 if (typeof window !== 'undefined') {

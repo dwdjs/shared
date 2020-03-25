@@ -1,0 +1,35 @@
+{
+  "name": "@deepjs/cookie",
+  "version": "0.1.0",
+  "description": "cookie",
+  "main": "lib/index.js",
+  "files": [
+    "./README.md",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "npx @babel/cli src -s inline -d ./lib --ignore __test__",
+    "build": "./node_modules/.bin/babel src -d lib --ignore __test__",
+    "prepublish": "npm run build",
+    "test": "jest --no-cache --detectOpenHandles"
+  },
+  "keywords": [
+    "cookie",
+    "deepjs"
+  ],
+  "author": "cloudyan <1395093509@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0"
+  },
+  "gitHead": "fb0aad6cbe34e5cdc23db83ec7807ccfac43f3f7"
+}

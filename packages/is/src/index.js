@@ -1,6 +1,7 @@
 /*!
- * 类型判断
- * @deepjs/is
+ * @Author: cloudyan <cloudcode@qq.com>
+ * @Created at: 2020-03-25 22:03:24
+ * 功能说明: 类型判断 @deepjs/is
  */
 
 // 将正则提取出来，可以缓存编译，优化速度

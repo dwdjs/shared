@@ -1,3 +1,9 @@
+/*!
+ * @Author: cloudyan <cloudcode@qq.com>
+ * @Created at: 2020-03-25 22:03:43
+ * 功能说明: url query-string 相关处理
+ */
+
 // 工具类
 // https://stackoverflow.com/questions/34072598/es6-exporting-importing-in-index-file
 // https://github.com/gajus/create-index
