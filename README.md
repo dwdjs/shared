@@ -8,21 +8,22 @@
 模块列表
 
 - common
-  - [ ] bridge
   - [x] cache   [lru-cache]
   - [x] date
   - [x] html-parser
   - [x] is
   - [x] qs
-  - [ ] stat
   - [x] utils
   - [x] version
 - web 专用
+  - [ ] bridge
   - [x] cookie  [js-cookie]
   - [ ] device
+  - [ ] stat
   - [x] storage
 - uni-app 专用
   - [x] uni-pull
+  - [ ] uni-stat
   - [x] uni-storage
 
 第三方
