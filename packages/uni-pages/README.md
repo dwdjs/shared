@@ -32,3 +32,7 @@ module.exports = {
   }
 }
 ```
+
+TODO:
+
+缺点：每次更新 pages.json 需要重新启动，因为注入发生在启动时
