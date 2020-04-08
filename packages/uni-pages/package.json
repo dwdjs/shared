@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/uni-pages",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "支持 uni-app 项目获得 pages.json 全局配置",
   "main": "lib/index.js",
   "files": [
