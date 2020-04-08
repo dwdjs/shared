@@ -24,7 +24,7 @@ module.exports = {
   // configureWebpack: config => {
   configureWebpack: {
     plugins: [
-      // 借助 webpack.DefinePlugin 轻松注入全局变量。ROUTES 及可全局使用
+      // 借助 webpack.DefinePlugin 注入全局变量
       new webpack.DefinePlugin({
         CC_PAGES: JSON.stringify(uniPages),
       })
