@@ -14,7 +14,7 @@
 
 ## 使用
 
-可以在 vue.config.js 中使用
+可以在 vue.config.js 中使用 https://uniapp.dcloud.io/collocation/vue-config
 
 ```js
 const uniPages require('@deepjs/uni-pages');
@@ -36,3 +36,5 @@ module.exports = {
 TODO:
 
 缺点：每次更新 pages.json 需要重新启动，因为注入发生在启动时
+
+需求新方案 loader 方向，允许 uni-app 直接 `import 'pages.json'`
