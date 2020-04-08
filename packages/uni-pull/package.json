@@ -1,6 +1,6 @@
 {
   "name": "@deepjs/uni-pull",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "uni-app 上拉加载 && 下拉刷新",
   "main": "lib/index.js",
   "files": [
