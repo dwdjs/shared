@@ -23,18 +23,18 @@ const {
 
 // 不要使用常用的 KEY, 避免冲突
 const STORAGE_KEY = 'uni_global'
-try {
-  allData = uni.getStorageSync(STORAGE_KEY) || {};
-} catch (err) {
-  // error
-  console.error(err);
-  allData = {};
-}
+// try {
+//   allData = uni.getStorageSync(STORAGE_KEY) || {};
+// } catch (err) {
+//   // error
+//   console.error(err);
+//   allData = {};
+// }
 
 export class Storage {
   constructor(store = STORAGE_KEY, time = 3600) {
     this.store = store;
-    this._time = time && time > 0 ? time : 600;
+    this._time = time && time > 0 ? time : 3600;
 
     let data = {};
     try {
@@ -62,14 +62,7 @@ export class Storage {
     Object.assign(storageData[this.store], {
       [`${key}`]: data,
     });
-    setStorage({
-      key: this.store,
-      data: storageData[this.store],
-      success(res) {
-        // console.log('数据缓存成功');
-        // console.log(res);
-      },
-    });
+    this.setAllData();
   }
 
   get(key) {
@@ -92,7 +85,7 @@ export class Storage {
   }
 
   clear(bool) { //
-    allData = {};
+    storageData[this.store] = {};
     if (!bool) {
       this.setAllData();
     } else {
@@ -102,11 +95,13 @@ export class Storage {
   }
 
   setAllData() {
-    removeStorage({
+    setStorage({
       key: this.store,
-      success: function () {
-        // console.log('success');
-      }
+      data: storageData[this.store],
+      success(res) {
+        // console.log('数据缓存成功');
+        // console.log(res);
+      },
     });
   }
 }
