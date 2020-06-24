@@ -35,6 +35,9 @@ module.exports = {
 
 TODO:
 
-缺点：每次更新 pages.json 需要重新启动，因为注入发生在启动时
+缺点：
+
+- 每次更新 pages.json 需要重新启动，因为注入发生在启动时
+- 使用 HBuilderX 编译时，是否支持使用此配置？
 
 需求新方案 loader 方向，允许 uni-app 直接 `import 'pages.json'`
