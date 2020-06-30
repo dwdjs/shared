@@ -61,6 +61,9 @@
 - `lerna publish` 会打tag，上传git,上传npm。
   - 需要在packages.json添加 "publishConfig": { "access": "public" },
 
+
+## 运行维护
+
 配置 yarn + workspaces
 
 ```bash
@@ -74,3 +77,4 @@
 "useWorkspaces": true,
 "npmClient": "yarn",
 ```
+
