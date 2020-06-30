@@ -51,7 +51,8 @@
 - `lerna bootstrap` 安装依赖
   - 默认是npm, 而且每个子package都有自己的node_modules
   - 配置 `yarn+workspaces` 后，只有顶层有一个node_modules
-  - TIP: 直接最外层运行，并不会把每个包的依赖都按照好，需要进去安装
+  - TIP: 通过 npm直接最外层运行，并不会把每个包的依赖都按照好，需要进去安装
+    - 但配置 yarn后 可以最外层运行 yarn，即可安装好每个包的依赖
 - `lerna list` 列出所有的包
 - `lerna create <name> [loc]` 创建一个包 默认放在 `workspaces[0]`所指位置
 - `lerna run <script>` 运行所有包里面的有这个script的命令
@@ -64,7 +65,7 @@
 
 ## 运行维护
 
-配置 yarn + workspaces
+推荐使用 yarn，如下配置 yarn + workspaces，项目根目录运行 yarn 即可安装每个包的依赖
 
 ```bash
 # package.json 文件加入
